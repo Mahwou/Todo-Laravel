@@ -11,7 +11,7 @@ class TodoController extends Controller
 
     public function index ()
     {
-        $contacts = Todo::where('day_end', null);
+        $contacts = Todo::where('day_end', null)->get();
         return view('Todo.index',compact('contacts'));
     }
 
