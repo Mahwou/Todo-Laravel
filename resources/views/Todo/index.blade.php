@@ -29,7 +29,7 @@
                     @foreach($contacts as $contact)
                     <tr>
                         <td>
-                            <a href="{{ route('edit', $contact->id)}}">
+                            <a href="#">
                             {{ $contact->task }}  
                             </a>
                         </td>
